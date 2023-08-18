@@ -26,7 +26,7 @@ function VerificarComandoVálido (){
 }
 ```
 
-Também temos o inveso, o _endsWith_ que compara o final da string se é igual ao que passamos
+Também temos o inverso, o _endsWith_ que compara o final da string se é igual ao que passamos
 
 ```js
 
