@@ -32,9 +32,31 @@ Também temos o inverso, o _endsWith_ que compara o final da string se é igual 
 
 let comando = prompt("Chat bot, insira o que preisa:");
 
-if(comando.endsWith('Refrigerante')){
+if(comando.endsWith('refrigerante')){
     console.log('Desculpe, eu sou apenas um chat bot e não consigo consumir alimentos/bebidas');
 }
 ```
 
-### [Próximo - Template String](./.md)
+E se quisermos um texto em qualquer lugar da string? Temos o _includes_
+
+```js
+
+let texto = "Vaca marrom pulou o portão";
+
+console.log(texto.includes("pulo")); // Retorna true pois existe no texto
+
+```
+
+Agora se quisermos saber exatamente a posicão deste texto, podemos utilizar o _search_, ele também aceita regex, pode ver mais [clicando aqui](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search)
+
+> Lembrando que a contagem inicia do número 0
+
+```js
+
+let texto = "eu pulo na cama";
+
+console.log(texto.search("pulo")); // Retorna 3, a posição de início dele
+
+```
+
+### [Próximo - Template String](./TemplateString.md)
