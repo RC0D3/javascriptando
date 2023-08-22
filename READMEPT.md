@@ -6,8 +6,8 @@
 
 - [Let](./src/Let.md)
 - [Const](./src/Const.md)
-- [String manipulation]()
-- [Template String]()
+- [String manipulation](./src/StrManipulation.md)
+- [Template String](./src/TemplateString.md)
 
 ## Sets de dados
 - [Set]()
