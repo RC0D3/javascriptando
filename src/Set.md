@@ -32,10 +32,10 @@ Com essa coleção de dados podemos fazer um removedor de linhas duplicadas:
 
 Mas voltando ao básico dessa coleção, ela possuí alguns métodos como:
 
-- **add** que adiciona um elemento para a coleção
-- **has** que verifica se existe um item na coleção
-- **delete** que remove um item da coleção
-- **clear** limpa toda a coleção
+- **add(value)** que adiciona um elemento para a coleção
+- **has(value)** que verifica se existe um item na coleção
+- **delete(value)** que remove um item da coleção
+- **clear()** limpa toda a coleção
 
 E também uma propriedade
 
