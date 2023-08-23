@@ -13,6 +13,9 @@ Ele possuí alguns métodos como:
 - **has(key)** que verifica se existe um item na coleção
 - **delete(key)** que remove um item da coleção
 - **clear()** limpa toda a coleção
+- **entries()** retorna os arrays com [key, value]
+- **values()** retorna apenas os valores
+- **keys()** retorna apenas as chaves/índices
 
 E também uma propriedade assim como o Set
 
@@ -33,6 +36,34 @@ mapmaroto.set('casa', {tem_carro: true}); // mapmaroto = {'casa' => {…}, 'mans
 mapmaroto.delete('casa'); //retorna true | mapmaroto = {'mansão' => 'iate', 'casebre' => 'bicicleta'}
 
 mapmaroto.size; // 2
+
+for(const map of mapmaroto.entries()){
+    console.log(map);
+    //['mansão', 'iate']
+    //['casebre', 'bicicleta']
+}
+
+/*
+const iterator = mapmaroto.entries();
+
+console.log(iterator1.next().value);
+// Array ["0", "foo"]
+
+console.log(iterator1.next().value);
+// Array [1, "bar"]
+*/
+
+for(const valores of mapmaroto.values()){
+    console.log(valores);
+    //'iate'
+    //bicicleta
+}
+
+for(const chaves of mapmaroto.keys()){
+    console.log(chaves);
+    //'mansão'
+    //'casebre'
+}
 
 mapmaroto.clear(); // mapmaroto = {}
 ```

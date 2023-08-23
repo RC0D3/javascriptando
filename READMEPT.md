@@ -30,7 +30,7 @@
 ## Outros
 
 - [For...of / for..in](./src/ForOfForIn.md)
-- [Geradores]()
+- [Geradores](./src/Generators.md)
 
 ## Classes
 - [Introdução a classes]()
