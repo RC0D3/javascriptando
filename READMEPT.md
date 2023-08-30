@@ -1,4 +1,4 @@
-# Bora aprender Javascripto moderno gurizada!
+# Bora aprender Javascripto moderno gurizada&excl;
 
 ## [English](./README.md)
 
@@ -21,6 +21,7 @@
 - [Destructuring Arrays](./src/ArrayDestructuring.md)
 - [Pesquisando na array](./src/IncludeInArray.md)
 - ~~[Map/filter/reduce/forEach/...] **TODO**~~
+
 ## Objetos
 
 - [Objetos literais](./src/ObjectLiterals.md)
@@ -33,11 +34,13 @@
 - [Geradores](./src/Generators.md)
 
 ## Classes
-- [Introdução a classes]()
-- [Herança de classes]()
+
+- [Introdução a classes](./src/ClassIntroduction.md)
+- [Herança de classes](./src/ClassInheritance.md)
+- [Getters and setters](./src/GetSet.md)
 
 ## Javascript assíncrono
 
-- [Promisses]()
-- [Fetch]()
-- [Async / await]()
+- [Promises](./src/Promises.md)
+- [Fetch](./src/Fetch.md)
+- [Async / await](./src/AsyncAwait.md)

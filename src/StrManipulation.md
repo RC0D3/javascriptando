@@ -59,4 +59,14 @@ console.log(texto.search("pulo")); // Retorna 3, a posição de início dele
 
 ```
 
+Para repetirmos um texto, também há um função o _repeat(quantidade)_
+
+```js
+
+let gato = "miau ";
+
+console.log(gato.repeat(5)); // miau miau miau miau miau 
+
+```
+
 ### [Próximo - Template String](./TemplateString.md)
