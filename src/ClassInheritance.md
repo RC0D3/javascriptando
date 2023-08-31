@@ -8,52 +8,52 @@ Marcada pela expressão _extentds_ após o nome da classe, indicando na frente o
 
 ```js
 
-class Calculadora {
+class Calculator {
     constructor(){ // Método construtor chamado ao instânciar nova classe
         console.log("Estou pronto para somar!")
     }
     /* Funções */
-    soma(numero, numero2){
-        return numero + numero2;
+    sum(number, number2){
+        return number + number2;
     }
 
-    subtracao(numero, numero2){
-        return numero - numero2;
+    subtraction(number, number2){
+        return number - number2;
     }
 
-    divisao(numero, numero2){
-        return numero / numero2;
+    division(number, number2){
+        return number / number2;
     }
     
-    multiplicacao(numero, numero2){
-        return numero * numero2;
+    multiplication(number, number2){
+        return number * number2;
     }
 
 }
 
-class CalculadoraCientifica extends Calculadora {
-    raizQuadrada(numero){
-        return Math.sqrt(numero);
+class ScientificCalculator extends Calculator {
+    squareRoot(number){
+        return Math.sqrt(number);
     }
 
-    elevarNumero(numero, potencia){
-        return Math.pow(numero, potencia);
+    square(number, power){
+        return Math.pow(number, power);
     }
 }
 
-const calc = new CalculadoraCientifica();
+const calc = new ScientificCalculator();
 // "Etou pronto para somar!"
 
-console.log(calc.soma(5,19)); // 24
+console.log(calc.sum(5,19)); // 24
 
-console.log(calc.elevarNumero(3,2)); // 3² = 9
+console.log(calc.square(3,2)); // 3² = 9
 
 ```
 
 > Caso seja necessário utilizar constructor na classe que herda, precisamos chamar o construtor da classe pai, utilizando a expressão _super_.
 
 ```js
-class CalculadoraCientifica extends Calculadora {
+class ScientificCalculator extends Calculator {
     
     constructor(){
         super(); // Chama o construtor da classe pai (Calculadora)

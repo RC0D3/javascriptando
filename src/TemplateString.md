@@ -5,25 +5,25 @@
 Bora lançar aquele texto padrão no nosso chat bot?
 
 ```js
-let nomeUsuario = prompt("Qual seu nome?");
-let creditos = prompt("Quantos créditos tem?");
+let username = prompt("Qual seu nome?");
+let credits = prompt("Quantos créditos tem?");
 
-let retornoMensagem = "Olá " + nomeUsuario + "\nVocê tem " + creditos + " créditos";
+let returnMessage = "Olá " + username + "\nVocê tem " + credits + " créditos";
 ```
 
 Hmm, mas isso está muito poluído, ai que entra nossa _template string_, que nos ajuda a formatar esse texto de forma mais elegante, permitindo incluir as quebras de linhas e variáveis de maneira melhor:
 
 ```js
-let infoUsuario {
-    nome: '',
-    creditos: 0
+let userInfo {
+    name: '',
+    credits: 0
 };
 
-infoUsuario.nome = prompt("Qual seu nome?");
-infoUsuario.creditos = prompt("Quantos créditos tem?");
+userInfo.name = prompt("Qual seu nome?");
+userInfo.credits = prompt("Quantos créditos tem?");
 
-let retornoMensagem = `Olá ${infoUsuario.nome}
-Você tem ${infoUsuario.creditos} créditos`;
+let returnMessage = `Olá ${userInfo.name}
+Você tem ${userInfo.credits} créditos`;
 ```
 
 ### [Próximo - Set](./Set.md)

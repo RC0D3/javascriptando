@@ -5,33 +5,33 @@
 É basicamente o mesmo exemplo do spread operator com arrays, mas agora com um objeto
 
 ```js
-const gato = {
-    nome: "Raisco",
-    som: "Miau!",
-    chamado: "Pspspsps"
+const cat = {
+    name: "Raisco",
+    sound: "Miau!",
+    call: "Pspspsps"
 };
 
 const animal = {
-    gato
-}; // {gato: {…}}
+    cat
+}; // {cat: {…}}
 
-console.log(animal.gato.nome); // Raisco
+console.log(animal.cat.name); // Raisco
 ```
 
 Porém agora com o spread operator, tornamos as propriedades do outro objeto parte do objeto:
 
 ```js
-const gato = {
-    nome: "Raisco",
-    som: "Miau!",
-    chamado: "Pspspsps"
+const cat = {
+    name: "Raisco",
+    sound: "Miau!",
+    call: "Pspspsps"
 };
 
 const animal = {
-    ...gato
-}; // {nome: 'Raisco', som: 'Miau!', chamado: 'Pspspsps'}
+    ...cat
+}; // {name: 'Raisco', sound: 'Miau!', call: 'Pspspsps'}
 
-console.log(animal.nome); // Raisco
+console.log(animal.name); // Raisco
 ```
 
 ### [Próximo - Destructuring Objects](./ObjectsDestructuring.md)

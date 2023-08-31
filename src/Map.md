@@ -31,7 +31,7 @@ mapmaroto.set('casebre', 'bicicleta'); // mapmaroto = {'casa' => 'carro', 'mans�
 
 mapmaroto.has('casa'); // true
 
-mapmaroto.set('casa', {tem_carro: true}); // mapmaroto = {'casa' => {…}, 'mansão' => 'iate', 'casebre' => 'bicicleta'}
+mapmaroto.set('casa', {hasCar: true}); // mapmaroto = {'casa' => {…}, 'mansão' => 'iate', 'casebre' => 'bicicleta'}
 
 mapmaroto.delete('casa'); //retorna true | mapmaroto = {'mansão' => 'iate', 'casebre' => 'bicicleta'}
 
@@ -53,14 +53,14 @@ console.log(iterator1.next().value);
 // Array [1, "bar"]
 */
 
-for(const valores of mapmaroto.values()){
-    console.log(valores);
+for(const value of mapmaroto.values()){
+    console.log(value);
     //'iate'
     //bicicleta
 }
 
-for(const chaves of mapmaroto.keys()){
-    console.log(chaves);
+for(const key of mapmaroto.keys()){
+    console.log(key);
     //'mansão'
     //'casebre'
 }

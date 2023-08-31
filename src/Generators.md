@@ -8,13 +8,13 @@ A definição de um gerador é marcada com um _*_ em frente ao keyword da _funct
 
 ```js
 
-function* geradorDeId(){
+function* markerGenerator(){
     yield 1;
     yield 2;
     yield 3;
 }
 
-let id = geradorDeId();
+let id = markerGenerator();
 
 id.next().value;
 // 1
@@ -29,14 +29,14 @@ Mas olha, que interessante, ele também aceita variáveis no seu corpo e parâme
 
 ```js
 
-function* geradorDeId(){
-    int index = 1;
+function* markerGenerator(){
+    let index = 1;
 
     while(true){
         yield index++;
     }
 }
-let id = geradorDeId();
+let id = markerGenerator();
 
 id.next().value;
 // 1

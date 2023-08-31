@@ -9,20 +9,20 @@ Essa é muito útil quando estamos fazendo aquele chat bot básico hehe
 Famoso _startsWith_ aonde ele verifica se o início da string é igual ao que precisamos
 
 ```js
-const PrefixoComando = "/";
+const commandPrefix = "/";
 
-let comando = prompt("Chat bot, insira o que preisa:");
+let command = prompt("Chat bot, insira o que preisa:");
 
-function Principal(){
-    if(!VerificarComandoVálido()){
+function main(){
+    if(!verifyValidCommand()){
         return; // Early Return
     }
 
     //Comandos
 }
-Principal();
-function VerificarComandoVálido (){
-    return comando.startsWith(PrefixoComando);
+main();
+function verifyValidCommand (){
+    return command.startsWith(commandPrefix);
 }
 ```
 
@@ -30,9 +30,9 @@ Também temos o inverso, o _endsWith_ que compara o final da string se é igual 
 
 ```js
 
-let comando = prompt("Chat bot, insira o que preisa:");
+let command = prompt("Chat bot, insira o que preisa:");
 
-if(comando.endsWith('refrigerante')){
+if(command.endsWith('refrigerante')){
     console.log('Desculpe, eu sou apenas um chat bot e não consigo consumir alimentos/bebidas');
 }
 ```
@@ -41,9 +41,9 @@ E se quisermos um texto em qualquer lugar da string? Temos o _includes_
 
 ```js
 
-let texto = "Vaca marrom pulou o portão";
+let text = "Vaca marrom pulou o portão";
 
-console.log(texto.includes("pulo")); // Retorna true pois existe no texto
+console.log(text.includes("pulo")); // Retorna true pois existe no texto
 
 ```
 
@@ -53,9 +53,9 @@ Agora se quisermos saber exatamente a posicão deste texto, podemos utilizar o _
 
 ```js
 
-let texto = "eu pulo na cama";
+let text = "eu pulo na cama";
 
-console.log(texto.search("pulo")); // Retorna 3, a posição de início dele
+console.log(text.search("pulo")); // Retorna 3, a posição de início dele
 
 ```
 
@@ -63,9 +63,9 @@ Para repetirmos um texto, também há um função o _repeat(quantidade)_
 
 ```js
 
-let gato = "miau ";
+let cat = "miau ";
 
-console.log(gato.repeat(5)); // miau miau miau miau miau 
+console.log(cat.repeat(5)); // miau miau miau miau miau 
 
 ```
 

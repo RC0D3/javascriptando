@@ -7,8 +7,8 @@ Todo mundo deve conhecer o **for...in**, ele nos retorna o índice, ou a chave p
 ```js
 const test = ["zero", "um", "dois"];
 
-for(const chave in test){
-    console.log(chave);
+for(const key in test){
+    console.log(key);
 }
 // 0
 // 1
@@ -24,8 +24,8 @@ const test = {
     dois: 2
 };
     
-for(const chave in test){
-    console.log(`${chave}:${test[chave]}`);
+for(const key in test){
+    console.log(`${key}:${test[key]}`);
 }
 // zero:0
 // um:1
@@ -37,8 +37,8 @@ Já o **for...of** retorna o valor correspondente:
 ```js
 const test = ["zero", "um", "dois"];
 
-for(const valor of test){
-    console.log(valor);
+for(const value of test){
+    console.log(value);
 }
 // "zero"
 // "um"

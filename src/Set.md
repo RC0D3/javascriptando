@@ -13,18 +13,18 @@ Com essa coleção de dados podemos fazer um removedor de linhas duplicadas:
 <html>
     <head>
         <script>
-            function removerDuplicados(){
-                let texto = document.getElementById('textarea'); //Pega o textarea
-                let novoTexto = new Set(texto.value.split('\n')); //Pega o texto dele e quebra em uma array baseado nas qubras de linha e joga no Set
-                texto.value = [...novoTexto].join('\n'); // Transforma o Set em uma array e depois concatena tudo com a quebra de linha novamente
-                //Assim o Set remove as linhas duplicadas e devolvemos ao texto
+            function removeDuplicates(){
+                let text = document.getElementById('textarea'); //Pega o textarea
+                let newText = new Set(text.value.split('\n')); //Pega o texto dele e quebra em uma array baseado nas qubras de linha e joga no Set
+                text.value = [...newText].join('\n'); // Transforma o Set em uma array e depois concatena tudo com a quebra de linha novamente
+                //Assim o Set remove as linhas duplicadas e devolvemos ao text
             }
         </script>
     </head>
     <body>
         <textarea id='textarea'></textarea>
         <br>
-        <button onclick='removerDuplicados()'>Remover Duplicados</button>
+        <button onclick='removeDuplicates()'>Remover Duplicados</button>
 
     </body>
 </html>

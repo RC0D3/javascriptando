@@ -5,13 +5,14 @@
 Nested arrays são nada mais nada menos que uma array dentro de outra array:
 
 ```js
-let nomesGatos = ["Tom", "Mel", "Raisco"];
-let nomesCachorros = ["Amora", "Thor", "Toby"];
+let catNames = ["Tom", "Mel", "Raisco"];
+let dogNames = ["Amora", "Thor", "Toby"];
 
-let nomesAnimais = ["Café", "Paçoca", nomesGatos, nomesCachorros];
+let animalsNames = ["Café", "Paçoca", catNames, dogNames];
 // ['Café', 'Paçoca', Array(3), Array(3)]
 
-console.log(nomesAnimais[2][2]); // Raisco
+console.log(animalsNames[2][2]); // Raisco
+// ['Café', 'Paçoca', ['Tom', 'Mel', 'Raisco'], ['Amora', 'Thor', 'Toby']]
 ```
 
 ### [Próximo - Spread Operator](./SpreadOperator.md)

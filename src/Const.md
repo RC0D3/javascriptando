@@ -6,10 +6,10 @@ Então, esse é como nas outras linguagens, nada mais nada menos que uma constan
 > Basicamente ele não muda de valor e não pode ser declarado novamente ;)
 
 ```js
-const Livraria = "Maria José";
+const library = "Maria José";
 
-if(Livraria === "Maria José"){
-    Livraria = "Don Ruan"; //Erro por declarar novamente
+if(library === "Maria José"){
+    library = "Don Ruan"; //Erro por declarar novamente
 }
 ```
 

@@ -5,13 +5,13 @@
 Diferente das nested arrays, com este operador(_..._) nós copiamos o valor da array e concatenamos na array atual:
 
 ```js
-let nomesGatos = ["Tom", "Mel", "Raisco"];
-let nomesCachorros = ["Amora", "Thor", "Toby"];
+let catNames = ["Tom", "Mel", "Raisco"];
+let dogNames = ["Amora", "Thor", "Toby"];
 
-let nomesAnimais = ["Café", "Paçoca", ...nomesGatos, ...nomesCachorros];
+let animalsNames = ["Café", "Paçoca", ...catNames, ...dogNames];
 // ['Café', 'Paçoca', 'Tom', 'Mel', 'Raisco', 'Amora', 'Thor', 'Toby']
 
-console.log(nomesAnimais[4]); // Raisco
+console.log(animalsNames[4]); // Raisco
 ```
 
 Simples e muito útil no dia a dia.

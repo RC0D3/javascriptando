@@ -8,32 +8,30 @@ Getters e setters servem para alteramos os dados antes de inserirmos ou recebê-
 
 ```js
 
-class Banco {
-
-    constructor(dinheiro){
-        this.valor = dinheiro;
+class Bank {
+    constructor(money){
+        this.value = money;
     }
 
-    get dinheiro(){
+    get money(){
         return new Intl.NumberFormat('pt-BR', {
                                     style: 'currency',
                                     currency: 'BRL',
-        }).format(this.valor); // Formata para o padrão brasileiro de moedas
+        }).format(this.value); // Formata para o padrão brasileiro de moedas
     }
 
-    set definirDinheiro(valor){
-        this.valor = valor;
+    set setMoney(value){
+        this.value = value;
     }
-    
 }
 
-const conta = new Banco(1000);
+const accountBank = new Banco(1000);
 
-console.log(conta.dinheiro); // R$ 1.000,00
+console.log(accountBank.money); // R$ 1.000,00
 
-conta.definirDinheiro = 500;
+conta.setMoney = 500;
 
-console.log(conta.dinheiro); // R$ 500,00
+console.log(accountBank.money); // R$ 500,00
 
 ```
 
