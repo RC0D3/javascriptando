@@ -12,4 +12,4 @@ console.log(clients.includes("RC0D3")); // true
 
 ```
 
-### [Próximo - Objetos literais](./ObjectLiterals.md)
+### [Próximo - Filter](./Filter.md)

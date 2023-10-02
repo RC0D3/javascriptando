@@ -20,7 +20,8 @@
 - [Spread Operator](./src/SpreadOperator.md)
 - [Destructuring Arrays](./src/ArrayDestructuring.md)
 - [Pesquisando na array](./src/IncludeInArray.md)
-- ~~[Map/filter/reduce/forEach/...] **TODO**~~
+- ~~[Map/reduce/forEach/Join/Reduce/Reverse/Slice/Sort/Splice/...] **TODO**~~
+- [Filter](./src/Filter.md)
 
 ## Objetos
 
